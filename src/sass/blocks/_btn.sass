@@ -1,0 +1,37 @@
+.btn
+    border: 1px solid #f2f2f2
+    border-radius: 30px
+    color: #e8e8e8
+    font-family: Montserrat, sans-serif
+    font-size: 13px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 0.33px
+    padding: 11px 25px
+    background-color: transparent
+    text-decoration: none
+    display: inline-block
+    &_circled
+        display: inline-block
+        width: 50px
+        height: 50px
+        border: 1px solid #f2f2f2
+        padding: 0
+        border-radius: 50%
+        position: relative
+        &:after
+            transform: rotate(45deg)
+            content: ""
+            display: inline-block
+            position: absolute
+            width: 10px
+            height: 10px
+            left: 18px
+            bottom: 19px
+            border-right: 3px solid #f2f2f2
+            border-bottom: 3px solid #f2f2f2
+    &_fill
+        background-color: #485563
+    &_form
+        border-radius: 0
+        float: right
