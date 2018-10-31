@@ -4,19 +4,38 @@
         display: flex
         align-items: center
         justify-content: space-between
+        @media screen and (max-width: 1170px)
+            width: 97%
+            margin: 0 auto
+        @media screen and (max-width: 800px)
+            width: 41%
+            flex-wrap: wrap
+            justify-content: center
     .wrapper
         padding: 45px 0 50px
+        @media screen and (max-width: 800px)
+            padding: 20px 0
     .logo
         flex: none
     &__copyright
         min-width: 219px
     &__stay
         min-width: 90px
+        @media screen and (max-width: 1170px)
+            margin: 0 20px
+        @media screen and (max-width: 800px)
+            margin-bottom: 5px
     span
         color: #29323c
         flex: none
         flex-shrink: 0
+        @media screen and (max-width: 1170px)
+            margin: 0 20px
+        @media screen and (max-width: 800px)
+            margin-bottom: 10px
     &__space
         flex-shrink: 1
         width: 10px
         flex-basis: 47%
+        @media screen and (max-width: 800px)
+            display: none

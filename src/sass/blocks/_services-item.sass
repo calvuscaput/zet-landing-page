@@ -1,6 +1,11 @@
 .services-item
     max-width: 270px
-    width: 23,5%
+    width: 23.5%
+    @media screen and (max-width: 800px)
+        width: 50%
+        margin-bottom: 40px
+    @media screen and (max-width: 480px)
+        width: 100%
     &__img
         margin: 0 auto
         border-radius: 50%

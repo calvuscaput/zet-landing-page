@@ -3,21 +3,25 @@
     width: 32%
     max-width: 386px
     border: 1px solid #eeeeee
+    @media screen and (max-width: 800px)
+        max-width: none
+        width: 80%
+        margin-bottom: 10px
     .bot__text
         flex: 1 0 auto
         display: flex
         align-items: center
         justify-content: center
         padding: 0 8%
-
-
     .bot__btn
         padding-bottom: 36px
-
     &_big
         width: 34%
         max-width: 400px
         border-top: 4px solid #485563
+        @media screen and (max-width: 800px)
+            max-width: none
+            width: 80%
         .price__top
             padding-top: 63px
     &__top
@@ -36,7 +40,9 @@
         text-transform: uppercase
     &__text
         line-height: 40px
-        margin: 0 auto
+        margin: 30px auto
+        @media screen and (max-width: 1025px)
+            line-height: 25px
     &__bot
         display: flex
         flex-direction: column
@@ -44,3 +50,5 @@
         align-items: stretch
         justify-content: flex-end
         height: 341px
+        @media screen and (max-width: 800px)
+            height: auto

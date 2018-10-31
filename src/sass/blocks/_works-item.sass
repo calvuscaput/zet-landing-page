@@ -5,6 +5,12 @@
     overflow: hidden
     padding: 0
     display: block
+    @media screen and (max-width: 1025px)
+        width: 33%
+    @media screen and (max-width: 800px)
+        width: 50%
+    @media screen and (max-width: 480px)
+        width: 100%
     &:hover > &__content
         left: 0
         transition: left 0.5s
