@@ -1,7 +1,19 @@
 .price
+    position: relative
     width: 32%
     max-width: 386px
     border: 1px solid #eeeeee
+    .bot__text
+        flex: 1 0 auto
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0 8%
+
+
+    .bot__btn
+        padding-bottom: 36px
+
     &_big
         width: 34%
         max-width: 400px
@@ -25,7 +37,10 @@
     &__text
         line-height: 40px
         margin: 0 auto
-        margin-bottom: 91px
-        width: 70%
     &__bot
-        padding: 83px 0 36px
+        display: flex
+        flex-direction: column
+        flex-wrap: nowrap
+        align-items: stretch
+        justify-content: flex-end
+        height: 341px

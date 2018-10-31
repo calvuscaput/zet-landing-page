@@ -4,8 +4,36 @@
     img
         width: 100%
         display: block
+    &__img
+        width: 100%
+        position: relative
+        &:hover > .member__hover
+            opacity: 1
+            transition: opacity 0.5s
     &__hover
-        display: none
+        opacity: 0
+        transition: opacity 1s
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #e8e8e8
+        text-decoration: none
+        font-size: 13px
+        font-weight: 700
+        text-transform: uppercase
+        // Text style for "READ HIS B"
+        letter-spacing: 0.33px
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background-image: linear-gradient(to right, rgba(72,85,99, 0.7) 0%, rgba(41,50,60, 0.7) 100%)
+        .line.line_white
+            margin: 0 auto
+        span
+            margin-bottom: 15px
+            display: block
     &__name
         @extend .slider-item__name
         display: block
