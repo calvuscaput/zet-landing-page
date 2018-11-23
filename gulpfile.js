@@ -3,7 +3,12 @@ var gulp = require('gulp'),
     cssnano = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    ghpages = require('gh-pages');
+
+gulp.task('deployToGh', function() {
+    return ghpages.publish('dist');
+})
 
 gulp.task('sass', function() {
     return gulp.src('src/sass/**/*.sass')

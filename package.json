@@ -9,6 +9,7 @@
   "author": "Vladimir Tanasov",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cli": "^2.0.1",
