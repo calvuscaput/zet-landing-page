@@ -20,8 +20,8 @@
 ### Установка и просмотр
 Просто клонируйте репозиторий, установите зависимости и запустите gulp:
 ```
-git clone https://github.com/calvuscaput/stepno-one-page.git
-cd stepno-one-page
+git clone https://github.com/calvuscaput/zet-landing-page.git
+cd zet-landing-page
 npm i
 gulp watch
 ```
